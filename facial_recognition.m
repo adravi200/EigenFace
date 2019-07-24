@@ -7,8 +7,8 @@ function [i,rand_idx] = facial_recognition(N)
     im_data = load_database();
 
 
-    % Essentially, from our database of 40 images, we are training this model
-    % with 39 images and testing against a randomly selected one
+    % Essentially, from our database of 100 images, we are training this model
+    % with 99 images and testing against a randomly selected one
 
     rand_idx = round(100*rand());     
     if (rand_idx == 0) 
